@@ -34,9 +34,9 @@ x.then((data)=>{
 	  // let td2=document.createElement("td");
 	 let td2= tr[i].children[1];
 	  
-		td2.innerHTML=data[i].tt;
+		td2.innerHTML=data[i].time1;
 	  
-	total+=data[i].tt;
+	total+=data[i].time1;
     // console.log(data[i].time1);
   }
 	let tot= document.getElementById("total");
