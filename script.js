@@ -25,7 +25,7 @@ let prom3=new Promise((resolve,reject)=>{
 let promises=[prom1,prom2,prom3];
 let x=Promise.all(promises);
 x.then((data)=>{
-	
+	 let start=performance.now();
 	let total=0;
   for(let i=0;i<promises.length;i++){
 	 let td1= tr[i].children[0];
@@ -40,7 +40,8 @@ x.then((data)=>{
     // console.log(data[i].time1);
   }
 	let tot= document.getElementById("total");
-	tot.innerHTML=x.performance.now();
+	tot.innerHTML=start;
 	
 })
+
 
