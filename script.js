@@ -40,7 +40,7 @@ x.then((data)=>{
     // console.log(data[i].time1);
   }
 	let tot= document.getElementById("total");
-	tot.innerHTML=start;
+	tot.innerHTML=start/1000;
 	
 })
 
