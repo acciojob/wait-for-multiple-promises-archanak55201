@@ -40,7 +40,7 @@ x.then((data)=>{
     // console.log(data[i].time1);
   }
 	let tot= document.getElementById("total");
-	tot.innerHTML=4;
+	tot.innerHTML=x.performance.now();
 	
 })
 
