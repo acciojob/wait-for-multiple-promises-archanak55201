@@ -1,5 +1,5 @@
 //your JS code here. If required.
-const tbody= document.getElementById("output");
+const tr= document.getElementsByClassName("task");
 
 
 let prom1=new Promise((resolve,reject)=>{
@@ -25,15 +25,17 @@ let prom3=new Promise((resolve,reject)=>{
 let promises=[prom1,prom2,prom3];
 let x=Promise.all(promises);
 x.then((data)=>{
-	let tr=document.getElementsByClassName("task");
+	
 	let total=0;
   for(let i=0;i<promises.length;i++){
-	  
-		let td1=document.createElement("td");
+	 let td1= tr[i].children[0];
+		// let td1=document.createElement("td");
 		td1.innerHTML=data[i].name1;
-	  let td2=document.createElement("td");
+	  // let td2=document.createElement("td");
+	 let td2= tr[i].children[1];
+	  
 		td2.innerHTML=data[i].tt;
-	  tr[i].append(td1,td2);
+	  
 	total+=data[i].tt;
     // console.log(data[i].time1);
   }
