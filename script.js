@@ -39,9 +39,11 @@ x.then((data)=>{
 	total+=data[i].time1;
     // console.log(data[i].time1);
   }
+	
 	let tot= document.getElementById("total");
 	tot.innerHTML=start/1000;
 	
 })
+
 
 
