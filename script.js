@@ -6,13 +6,14 @@ let prom1=new Promise((resolve,reject)=>{
 	setTimeout(()=>{
 		 let start=performance.now();
 		resolve({name1:"Promise 1", time1:2,tt:start});
-	},1000)
+	},2000)
 })
 let prom2=new Promise((resolve,reject)=>{
 	setTimeout(()=>{
+		
 		 let start=performance.now();
 		resolve({name1:"Promise 2",time1:1,tt:start});
-	},2000)
+	},1000)
 })
 let prom3=new Promise((resolve,reject)=>{
 	setTimeout(()=>{
